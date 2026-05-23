@@ -1,25 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Open Sans','Bebas', sans-serif;
-    font-weight: 700;
-    color: #ffffff;
+body{
+    font-family: 'Source Sans 3', sans-serif;
+    background: #fff;
 }
 
-a {
+a{
     text-decoration: none;
+    color: inherit;
 }
 
-img {
-    max-width: 100%;
+ul{
+    list-style: none;
 }
 
-.wrapper {
-    background: linear-gradient(to top, #000000 0%, #1A0E01 100%);
+.header{
+    padding: 25px 0;
+}
+
+.header__container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* Верх */
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header__logo-box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__title{
+    font-size: 34px;
+    font-weight: 700;
+    color: #4b63d3;
+    letter-spacing: 2px;
+}
+.header__logo{
+    width: 180px;
+}
+
+/* Контакты */
+.header__contacts{
+    display: flex;
+    gap: 60px;
+}
+
+.header__mail,
+.header__phone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+    color: #777;
+}
+
+.header__mail a,
+.header__phone a{
+    color: #4b63d3;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+/* Линия */
+.header__line{
     width: 100%;
+    height: 1px;
+    background: #d9d9d9;
+    margin-bottom: 20px;
+}
+
+/* Меню */
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list{
+    display: flex;
+    gap: 34px;
+}
+
+.header__list-link{
+    font-size: 16px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.header__list-link:hover{
+    color: #4b63d3;
+}
+
+/* Кнопка */
+.header__call{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+
+    color: #4b63d3;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header__call-phone{
+    width: 16px;
+    margin: 0;
+    padding: 0;
 }
